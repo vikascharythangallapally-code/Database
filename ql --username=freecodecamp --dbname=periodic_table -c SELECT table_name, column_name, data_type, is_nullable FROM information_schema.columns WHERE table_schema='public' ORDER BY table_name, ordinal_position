@@ -1,0 +1,11 @@
+                                            Table "public.elements"
+    Column     |         Type          | Collation | Nullable | Default | Storage  | Stats target | Description 
+---------------+-----------------------+-----------+----------+---------+----------+--------------+-------------
+ atomic_number | integer               |           | not null |         | plain    |              | 
+ symbol        | character varying(2)  |           |          |         | extended |              | 
+ name          | character varying(40) |           |          |         | extended |              | 
+Indexes:
+    "elements_pkey" PRIMARY KEY, btree (atomic_number)
+    "elements_atomic_number_key" UNIQUE CONSTRAINT, btree (atomic_number)
+Access method: heap
+
